@@ -3,3 +3,4 @@ __pycache__/
 .venv/
 *.pyc
 ~/.compose-mind/
+compose_mind.egg-info/

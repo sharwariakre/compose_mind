@@ -131,4 +131,4 @@ Docker SDK.
 
 ## License
 
-TBD.
+[MIT](LICENSE) © 2026 Sharwari Akre

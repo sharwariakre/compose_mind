@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compose-mind"
+version = "0.1.0"
+description = "An AI-assisted Docker Compose CLI."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "typer[all]",
+    "rich",
+    "anthropic",
+    "docker",
+    "PyYAML",
+]
+
+[project.scripts]
+compose-mind = "compose_mind.cli:app"
+
+[tool.setuptools]
+package-dir = { "compose_mind" = "." }
+packages = [
+    "compose_mind",
+    "compose_mind.agent",
+    "compose_mind.docker",
+    "compose_mind.guardrails",
+    "compose_mind.history",
+]
